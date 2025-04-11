@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Corpo Clínico - Clínica Veterinária Vida</title>
+
+  <!-- Ícones Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      background-color: #fff8f4;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .home-icon {
+      font-size: 20px;
+      color: lightseagreen;
+      text-decoration: none;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+
+    h1 {
+      color: lightseagreen;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    @media (max-width: 900px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .card {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .card h2 {
+      font-size: 18px;
+      color: #333;
+      margin: 8px 0 4px;
+    }
+
+    .card h3 {
+      font-size: 14px;
+      color: #666;
+      margin: 0;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+      margin-top: 10px;
+      line-height: 1.5;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Ícone de Início -->
+    <a href="index.html" class="home-icon">
+      <i class="fas fa-home"></i> Início
+    </a>
+
+    <h1>Nosso Corpo Clínico</h1>
+
+    <!-- Grid com 4 colunas fixas -->
+    <div class="grid">
+      <div class="card">
+        <img src="Vida_1.png" alt="Dra Vida">
+        <h2>Dra Vida</h2>
+        <h3>Clínica Médica e Oftalmologia</h3>
+        <p>Cuidados gerais com a saúde dos pets e atenção especial à visão, garantindo olhares sempre saudáveis e atentos.</p>
+      </div>
+
+      <div class="card">
+        <img src="Yuki.png" alt="Dra Yuki Chan">
+        <h2>Dra Yuki Chan</h2>
+        <h3>Endocrinologia</h3>
+        <p>Diagnóstico e tratamento de distúrbios hormonais, como diabetes e doenças da tireoide, com acompanhamento personalizado.</p>
+      </div>
+
+      <div class="card">
+        <img src="raj.png" alt="Dr Raj">
+        <h2>Dr Raj</h2>
+        <h3>Psicologia</h3>
+        <p>Atendimento comportamental para pets ansiosos, medrosos ou agressivos, promovendo equilíbrio emocional e bem-estar.</p>
+      </div>
+
+      <div class="card">
+        <img src="Dory.png" alt="Dra Dory">
+        <h2>Dra Dory</h2>
+        <h3>Nutrição</h3>
+        <p>Planos alimentares balanceados para cada fase da vida do animal, promovendo saúde, energia e longevidade.</p>
+      </div>
+
+      <div class="card">
+        <img src="Joaquim_1.png" alt="Dr Joaquim">
+        <h2>Dr Joaquim</h2>
+        <h3>Fisiatria</h3>
+        <p>Reabilitação e alívio de dores crônicas com técnicas como fisioterapia, massagens e exercícios personalizados.</p>
+      </div>
+
+      <div class="card">
+        <img src="Pacoca_1.png" alt="Dr Paçoca">
+        <h2>Dr Paçoca</h2>
+        <h3>Gastroenterologia</h3>
+        <p>Tratamento de problemas digestivos e intestinais, com foco no conforto e boa digestão dos nossos pacientes.</p>
+      </div>
+
+      <div class="card">
+        <img src="Floquinho.png" alt="Dr Floquinho">
+        <h2>Dr Floquinho</h2>
+        <h3>Psiquiatria</h3>
+        <p>Avaliação e tratamento de distúrbios mentais em pets, como depressão, compulsões e traumas.</p>
+      </div>
+
+      <div class="card">
+        <img src="Shoyu.png" alt="Dr Shoyu">
+        <h2>Dr Shoyu</h2>
+        <h3>Diagnóstico por Imagem</h3>
+        <p>Exames como ultrassom e raio-X para garantir diagnósticos rápidos, precisos e com o menor estresse possível.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

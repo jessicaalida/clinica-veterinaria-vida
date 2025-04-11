@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quem Somos - Clínica Veterinária Vida</title>
+
+  <!-- Ícones Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      background-color: #fff8f4;
+      padding: 20px;
+    }
+
+    .home-icon {
+      font-size: 20px;
+      color: lightseagreen;
+      text-decoration: none;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+
+    h1 {
+      color: lightseagreen;
+      margin-bottom: 40px; /* 2 linhas de espaço */
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .quem-somos {
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .texto-quem-somos {
+      flex: 1;
+      min-width: 300px;
+      max-width: 600px;
+      font-size: 18px;
+      color: #444;
+    }
+
+    .texto-quem-somos p {
+      margin-bottom: 20px; /* 1 linha entre parágrafos */
+      line-height: 1.6;
+    }
+
+    .imagem-vida {
+      flex: 1;
+      max-width: 400px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      .quem-somos {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .imagem-vida {
+        max-width: 80%;
+        margin-top: 20px;
+      }
+
+      .texto-quem-somos {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a href="index.html" class="home-icon">
+    <i class="fas fa-home"></i> Início
+  </a>
+
+  <div class="container">
+    <h1>Quem Somos</h1>
+
+    <div class="quem-somos">
+      <div class="texto-quem-somos">
+        <p>
+          A <strong>Clínica Veterinária Vida</strong> é um lugar mágico onde quem cuida... também é cuidado. Aqui, nossa equipe é formada por médicos veterinários muito especiais: animais que dedicam suas vidas a cuidar dos outros bichinhos com amor, empatia e conhecimento.
+        </p>
+        <p>
+          Liderada pela doce e experiente <strong>Dra. Vida</strong>, uma Shih Tzu encantadora que enxerga o mundo com um único olhinho cheio de sabedoria, nossa clínica oferece um atendimento acolhedor, moderno e cheio de carinho.
+        </p>
+        <p>
+          Contamos com especialistas como o <strong>Dr. Paçoca</strong>, expert em gastroenterologia felina, a <strong>Dra. Dory</strong>, referência em nutrição animal, e muitos outros profissionais incríveis — todos com o mesmo propósito: fazer os rabinhos abanarem de alegria!
+        </p>
+        <p>
+          Na Clínica Vida, cada consulta é um encontro de afeto e cuidado. Aqui, os pets são tratados por quem entende — porque também são pets!
+        </p>
+      </div>
+
+      <img src="dra_vida.png" alt="Dra Vida como médica veterinária" class="imagem-vida" />
+    </div>
+  </div>
+</body>
+</html>

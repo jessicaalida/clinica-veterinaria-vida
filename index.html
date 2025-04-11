@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Clínica Veterinária Vida</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: sans-serif;
+      background-color: #fff8f4;
+      padding: 20px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    nav {
+      background-color: #f0f0f0;
+      padding: 10px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    nav a {
+      margin: 0 20px;
+      text-decoration: none;
+      color: lightseagreen;
+      font-weight: bold;
+    }
+    .intro {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .intro-text {
+      flex: 1;
+      min-width: 250px;
+    }
+    .imagem-pet {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+    }
+    h1 {
+      color: lightsalmon;
+      margin-bottom: 10px;
+    }
+    h2 {
+      color: lightseagreen;
+      margin: 40px 0 20px;
+      text-align: center;
+    }
+    .servicos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .servico {
+      flex: 1 1 300px;
+      max-width: 400px;
+      text-align: center;
+    }
+    .servico img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    form {
+      max-width: 400px;
+      margin: 0 auto 60px;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    form label {
+      display: block;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    form input,
+    form select,
+    form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form button {
+      width: 100%;
+      padding: 10px;
+      background-color: lightseagreen;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #3a7d77;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menu -->
+  <nav>
+    <a href="index.html">🏠 Início</a>
+    <a href="quem_somos.html">Quem somos</a>
+    <a href="corpo_clinico.html">Corpo Clínico</a>
+    <a href="localizacao.html">Localização</a>
+ 
+  </nav>
+
+  <div class="container">
+    <!-- Introdução -->
+    <div class="intro">
+      <div class="intro-text">
+        <h1>Bem-vindos!</h1>
+        <p>Somos a <strong>Clínica Veterinária Vida</strong>, um lugar mágico onde quem cuida também é cuidado.</p>
+        <p>Com uma equipe de médicos veterinários animais, oferecemos carinho, tecnologia e dedicação em cada consulta.</p>
+      </div>
+      <img src="fachada.png" alt="Fachada" class="imagem-pet">
+    </div>
+
+    <!-- Serviços -->
+    <h2>Nossos Serviços</h2>
+    <div class="servicos">
+      <div class="servico">
+        <img src="exames.png" alt="Exame veterinário">
+        <p>Exames laboratoriais completos para diagnóstico rápido e seguro.</p>
+      </div>
+      <div class="servico">
+        <img src="medicos.png" alt="Consulta veterinária">
+        <p>Consultas com especialistas em diversas áreas, com atendimento humanizado.</p>
+      </div>
+    </div>
+
+    <!-- FORMULÁRIO ATUALIZADO -->
+    <h2>Quer saber mais?</h2>
+    <form action="obrigada.html" method="get">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="cidade">Cidade:</label>
+      <input type="text" id="cidade" name="cidade" required>
+
+      <label for="estado">Estado:</label>
+      <select id="estado" name="estado" required>
+        <option value="">Selecione</option>
+        <option value="SP">SP</option>
+        <option value="RJ">RJ</option>
+        <option value="MG">MG</option>
+        <option value="DF">DF</option>
+        <!-- Outros estados -->
+      </select>
+
+      <label for="mensagem">Digite sua mensagem aqui:</label>
+      <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem..."></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+</body>
+</html>
